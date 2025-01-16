@@ -18,17 +18,6 @@ export class Main {
     }
 
     convertSingleHoursRow(hours) {
-        if (hours === 0) {
-            return "0000";
-        }
-        if (hours === 1) {
-            return "R000";
-        }
-        if (hours === 3) {
-            return "RRR0";
-        }
-        if (hours === 4) {
-            return "RRRR";
-        }
+        return "R".repeat(hours % 5).padEnd(4, "0");
     }
 }
