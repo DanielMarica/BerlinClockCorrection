@@ -4,26 +4,16 @@ export class Main {
     }
 
     convertFiveMinutesRow(minutes) {
-        if (minutes < 5) {
-            return "00000000000";
-        }
-        if (minutes === 5) {
-            return "Y0000000000";
-        }
-        if (minutes === 10) {
-            return "YY000000000";
-        }
-        if (minutes === 15) {
-            return "YYR00000000";
-        }
-        if (minutes === 20) {
-            return "YYRY0000000";
-        }
-        if (minutes === 25) {
-            return "YYRYO000000";
-        }
-        if (minutes === 30) {
-            return "YYRYYR00000";
+        const fiveMinutes = Math.floor(minutes / 5);
+        switch(fiveMinutes) {
+            case 0: return "00000000000";
+            case 1: return "Y0000000000";
+            case 2: return "YY000000000";
+            case 3: return "YYR00000000";
+            case 4: return "YYRY0000000";
+            case 5: return "YYRYO000000";
+            case 6: return "YYRYYR00000";
+            default: return "00000000000";
         }
     }
 }
