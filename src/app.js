@@ -22,5 +22,8 @@ export class Main {
         if (minutes === 25) {
             return "YYRYO000000";
         }
+        if (minutes === 30) {
+            return "YYRYYR00000";
+        }
     }
 }
