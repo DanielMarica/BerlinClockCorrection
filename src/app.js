@@ -16,4 +16,10 @@ export class Main {
             default: return "00000000000";
         }
     }
+
+    convertSingleHoursRow(hours) {
+        if (hours === 0) {
+            return "0000";
+        }
+    }
 }

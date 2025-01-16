@@ -110,4 +110,11 @@ describe("Main class should implments a berlin clock ", function(){
         });
         
     });
+
+    describe("Single hours row", function() {
+        it("given 0 hours should return '0000'", function() {
+            const result = main.convertSingleHoursRow(0);
+            expect(result).toBe("0000");
+        });
+    });
 });
