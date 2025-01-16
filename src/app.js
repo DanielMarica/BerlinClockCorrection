@@ -27,5 +27,8 @@ export class Main {
         if (hours === 3) {
             return "RRR0";
         }
+        if (hours === 4) {
+            return "RRRR";
+        }
     }
 }
