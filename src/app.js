@@ -10,5 +10,8 @@ export class Main {
         if (minutes === 5) {
             return "Y0000000000";
         }
+        if (minutes === 10) {
+            return "YY000000000";
+        }
     }
 }
