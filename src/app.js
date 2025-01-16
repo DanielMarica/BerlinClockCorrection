@@ -1,7 +1,6 @@
-export class Main{
-
-    convertSimpleMinutesRow(minutes){
-        return "0000";
+export class Main {
+    convertSimpleMinutesRow(minutes) {
+        if (minutes === 0) return "0000";
+        return "Y000";
     }
-    
 }
