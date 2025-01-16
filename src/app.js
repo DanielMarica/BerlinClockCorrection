@@ -21,5 +21,8 @@ export class Main {
         if (hours === 0) {
             return "0000";
         }
+        if (hours === 1) {
+            return "R000";
+        }
     }
 }

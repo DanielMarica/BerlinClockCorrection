@@ -116,5 +116,10 @@ describe("Main class should implments a berlin clock ", function(){
             const result = main.convertSingleHoursRow(0);
             expect(result).toBe("0000");
         });
+
+        it("given 1 hours should return 'R000'", function() {
+            const result = main.convertSingleHoursRow(1);
+            expect(result).toBe("R000");
+        });
     });
 });
