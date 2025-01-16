@@ -4,7 +4,7 @@ export class Main {
     }
 
     convertFiveMinutesRow(minutes) {
-        if (minutes === 0) {
+        if (minutes === 0 || minutes === 1) {
             return "00000000000";
         }
     }
