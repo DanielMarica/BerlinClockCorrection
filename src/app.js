@@ -4,8 +4,11 @@ export class Main {
     }
 
     convertFiveMinutesRow(minutes) {
-        if (minutes === 0 || minutes === 1) {
+        if (minutes < 5) {
             return "00000000000";
+        }
+        if (minutes === 5) {
+            return "Y0000000000";
         }
     }
 }

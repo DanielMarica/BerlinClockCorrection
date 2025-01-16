@@ -79,5 +79,10 @@ describe("Main class should implments a berlin clock ", function(){
             const result = main.convertFiveMinutesRow(1);
             expect(result).toBe("00000000000");
         });
+
+        it("given 5 minutes should return 'Y0000000000'", function() {
+            const result = main.convertFiveMinutesRow(5);
+            expect(result).toBe("Y0000000000");
+        });
     });
 });
