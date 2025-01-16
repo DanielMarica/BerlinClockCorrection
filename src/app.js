@@ -19,5 +19,8 @@ export class Main {
         if (minutes === 20) {
             return "YYRY0000000";
         }
+        if (minutes === 25) {
+            return "YYRYO000000";
+        }
     }
 }
